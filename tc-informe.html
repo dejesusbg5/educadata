@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>group - educaData</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+  </head>
+
+  <body>
+    <header class="md3-topbar md3-topbar--search">
+      <section class="md3-topbar__leading">
+        <button class="md3-btn md3-btn--icon md3-topbar__btn" onclick="history.back()">
+          <span class="material-symbols-rounded md3-btn__icon"> arrow_back </span>
+        </button>
+        <a href="#">
+          <img src="./img/logo.png" alt="Logo educaData" />
+          <span class="md3-topbar__title">educaData</span>
+        </a>
+      </section>
+      <section class="md3-topbar__trailing">
+        <input type="search" class="md3-topbar__search" placeholder="Buscar" />
+        <a href="#">
+          <button class="md3-btn md3-btn--icon md3-topbar__btn">
+            <img class="md3-btn__icon" src="./img/user.png" alt="Dani's picture" />
+          </button>
+        </a>
+      </section>
+    </header>
+
+    <footer>
+      <span>© 2024 - Grupo 3 (ARQ SW) </span>
+    </footer>
+
+    <main>
+      <div id="container">
+        <h2>Informe de grupo</h2>
+        <h4 style="text-align: end">Grupo 1</h4>
+        <section id="admin">
+          <div class="md3-card md3-card--filled">
+            <span class="md3-card__headline">Aprueba</span>
+            <span class="md3-card__text">30%</span>
+          </div>
+          <div class="md3-card md3-card--filled">
+            <span class="md3-card__headline">Reprueba</span>
+            <span class="md3-card__text">2%</span>
+          </div>
+          <div class="md3-card md3-card--filled">
+            <span class="md3-card__headline">No entrega</span>
+            <span class="md3-card__text">68%</span>
+          </div>
+        </section>
+        <h5>Detecciones de falencias por la IA</h5>
+        <p>
+          Después de analizar las razones detrás de por qué el 68% de los estudiantes no entregan sus tareas, hemos
+          identificado algunas áreas donde podríamos mejorar como equipo educativo. Parece que los estudiantes enfrentan
+          desafíos diversos que afectan su capacidad para completar las tareas.
+          <br /><br />
+          Por ejemplo, muchos estudiantes mencionaron que la falta de claridad en las instrucciones les dificulta
+          comenzar. Otros sienten que no tienen suficiente tiempo para manejar las cargas de trabajo, especialmente
+          aquellos que tienen compromisos extracurriculares o responsabilidades familiares. Además, algunos estudiantes
+          reportan falta de motivación y conexión emocional con el contenido de las tareas.
+        </p>
+        <h5>Asistencia</h5>
+        <section id="list">
+          <div class="md3-card md3-card--outlined">
+            <img class="md3-card__media" src="./img/user.png" alt="User picture" />
+            <span class="md3-card__headline"> Aaron Loeb </span>
+            <span class="md3-card__subhead"> 3 Fallas </span>
+          </div>
+          <div class="md3-card md3-card--outlined">
+            <img class="md3-card__media" src="./img/user.png" alt="User picture" />
+            <span class="md3-card__headline"> Adeline Palmerston </span>
+            <span class="md3-card__subhead"> 0 Fallas </span>
+          </div>
+          <div class="md3-card md3-card--outlined">
+            <img class="md3-card__media" src="./img/user.png" alt="User picture" />
+            <span class="md3-card__headline"> Daniel Gallego </span>
+            <span class="md3-card__subhead"> 1 Fallas </span>
+          </div>
+          <div class="md3-card md3-card--outlined">
+            <img class="md3-card__media" src="./img/user.png" alt="User picture" />
+            <span class="md3-card__headline"> Juliana Silva </span>
+            <span class="md3-card__subhead"> 7 Fallas </span>
+          </div>
+          <div class="md3-card md3-card--outlined">
+            <img class="md3-card__media" src="./img/user.png" alt="User picture" />
+            <span class="md3-card__headline"> Pedro Fernandes </span>
+            <span class="md3-card__subhead"> 0 Fallas </span>
+          </div>
+          <div class="md3-card md3-card--outlined">
+            <img class="md3-card__media" src="./img/user.png" alt="User picture" />
+            <span class="md3-card__headline"> Corina Villanueva </span>
+            <span class="md3-card__subhead"> -1 Fallas </span>
+          </div>
+          <div class="md3-card md3-card--outlined">
+            <img class="md3-card__media" src="./img/user.png" alt="User picture" />
+            <span class="md3-card__headline"> Reese Miller </span>
+            <span class="md3-card__subhead"> 2 Fallas </span>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Material Design -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vibrant.js/1.0.0/Vibrant.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dejesusbg5/md3/script/monet.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dejesusbg5/md3/script/material-you.js"></script>
+    <!-- educaData -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

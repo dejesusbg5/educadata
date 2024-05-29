@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>notas - educaData</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/notas.css" />
+  </head>
+
+  <body>
+    <nav class="md3-nav">
+      <input class="md3-nav__item-radio" type="radio" name="activity" id="to-1" />
+      <a class="md3-nav__item" href="#" tabindex="-1">
+        <label class="md3-nav__item__label" for="to-1">
+          <i class="material-symbols-rounded md3-nav__item__icon">home</i>
+          <span class="md3-nav__item__text">Materias</span>
+        </label>
+      </a>
+      <input class="md3-nav__item-radio" type="radio" name="activity" id="to-2" />
+      <a class="md3-nav__item" href="#" tabindex="-1">
+        <label class="md3-nav__item__label" for="to-2">
+          <i class="material-symbols-rounded md3-nav__item__icon">checklist</i>
+          <span class="md3-nav__item__text">Tareas</span>
+        </label>
+      </a>
+      <input class="md3-nav__item-radio" type="radio" name="activity" id="to-3" checked />
+      <a class="md3-nav__item" href="#" tabindex="-1">
+        <label class="md3-nav__item__label" for="to-3">
+          <i class="material-symbols-rounded md3-nav__item__icon">monitoring</i>
+          <span class="md3-nav__item__text">Informes</span>
+        </label>
+      </a>
+    </nav>
+
+    <header class="md3-topbar md3-topbar--search">
+      <section class="md3-topbar__leading">
+        <a href="#">
+          <img src="./img/logo.png" alt="Logo educaData" />
+          <span class="md3-topbar__title">educaData</span>
+        </a>
+      </section>
+      <section class="md3-topbar__trailing">
+        <input type="search" class="md3-topbar__search" placeholder="Buscar" />
+        <a href="#">
+          <button class="md3-btn md3-btn--icon md3-topbar__btn">
+            <img class="md3-btn__icon" src="./img/user.png" alt="Dani's picture" />
+          </button>
+        </a>
+      </section>
+    </header>
+
+    <footer>
+      <span>© 2024 - Grupo 3 (ARQ SW) </span>
+    </footer>
+
+    <main>
+      <div id="container">
+        <h2>Informes y notas</h2>
+        <section id="stats">
+          <div class="md3-card md3-card--outlined">
+            <table
+              id="personero-table"
+              class="charts-css bar show-data-on-hover data-outside show-heading show-labels data-spacing-6 datasets-spacing-3">
+              <tr>
+                <th scope="row">Matemáticas</th>
+                <td style="--size: calc(60 / 100)"><span class="data">60</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Naturales</th>
+                <td style="--size: calc(75 / 100)"><span class="data">75</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Historia</th>
+                <td style="--size: calc(55 / 100)"><span class="data">55</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Ed. Física</th>
+                <td style="--size: calc(98 / 100)"><span class="data">98</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Geometría</th>
+                <td style="--size: calc(38 / 100)"><span class="data">38</span></td>
+              </tr>
+            </table>
+          </div>
+        </section>
+        <h5>Consejos de la IA personalizados</h5>
+        <p>
+          La práctica constante te ayudará a desarrollar una comprensión más profunda de los conceptos y a mejorar tu
+          habilidad para visualizar y trabajar con formas en el espacio. Además, intenta relacionar la geometría con
+          situaciones cotidianas para entender su aplicación práctica.
+        </p>
+        <button class="md3-btn md3-btn--filled">
+          <span class="md3-btn__text">Generar informe completo</span>
+        </button>
+      </div>
+    </main>
+
+    <!-- Material Design -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vibrant.js/1.0.0/Vibrant.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dejesusbg5/md3/script/monet.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dejesusbg5/md3/script/material-you.js"></script>
+    <!-- educaData -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

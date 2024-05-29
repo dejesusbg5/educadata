@@ -1,0 +1,66 @@
+@import url("https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css");
+
+section#stats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* chart styling */
+section#stats div.md3-card {
+  display: flex;
+  padding: 1.5rem 2.5rem 1.5rem 3.5rem;
+  cursor: pointer;
+  max-height: 24rem;
+}
+
+section#stats div.md3-card tbody {
+  min-height: 14rem;
+}
+
+/* styling for graph data */
+section#stats div.md3-card th {
+  font: var(--font-label-l);
+  white-space: nowrap;
+  left: -2rem;
+}
+
+section#stats div.md3-card td {
+  font: var(--font-title-m);
+  color: var(--color-primary) !important;
+  font-weight: 600;
+  background-color: var(--color-primary) !important;
+  font-family: "Roboto Mono";
+  border-radius: 0 0.75rem 0.75rem 0;
+}
+
+section#stats div.md3-card tr:nth-child(odd) td {
+  color: var(--color-tertiary) !important;
+  background-color: var(--color-tertiary) !important;
+}
+
+section#stats div.md3-card span.data {
+  transform: translate(calc(100% + 0.5rem), -0.1rem) !important;
+}
+
+/* normal table */
+.ed-table {
+  width: calc(100% - 2rem);
+  margin: 1rem;
+  border: 1px solid var(--color-outline);
+  border-radius: 1rem;
+}
+
+.ed-table tr:nth-child(-n + 2) {
+  background-color: var(--color-tertiary-container) !important;
+}
+
+.ed-table tr:nth-child(-n + 1) th {
+  border-radius: 1rem 1rem 0 0;
+}
+
+/* table header and cells */
+.ed-table th,
+.ed-table td {
+  padding: 0.4rem 0.6rem;
+}

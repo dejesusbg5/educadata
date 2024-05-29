@@ -1,0 +1,68 @@
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
+#container button {
+  margin-left: auto;
+  margin-top: 1rem;
+}
+
+#container section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#container section .md3-card {
+  display: flex;
+  flex: 35%;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+#container section#admin .md3-card {
+  flex: 100%;
+}
+
+@media screen and (min-width: 944px) {
+  #container section#admin .md3-card {
+    flex: 25%;
+  }
+}
+
+#container section#admin .md3-card span.md3-card__text {
+  font: var(--font-display-s);
+}
+
+#container section .md3-card--outlined {
+  border: 2px dashed var(--color-primary);
+}
+
+#container section#notifications .md3-card div {
+  margin-right: auto;
+}
+
+#container section .md3-card img {
+  width: auto;
+  height: 2rem;
+}
+
+#container section#list .md3-card {
+  flex: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 1rem 1rem 0rem 0rem;
+  gap: 1.5rem;
+}
+
+#container section#list .md3-card img {
+  margin-bottom: 0;
+}
+
+#container section#list .md3-card .md3-card__headline {
+  margin-right: auto;
+}
