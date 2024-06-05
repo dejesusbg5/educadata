@@ -1,18 +1,16 @@
+/* search header */
 @media screen and (max-width: 512px), screen and (max-height: 512px) {
-  .md3-topbar--search .md3-topbar__btn,
-  .md3-topbar--search .md3-topbar__leading {
-    display: inline-flex !important;
+  header.md3-topbar--search .md3-topbar__btn,
+  header.md3-topbar--search .md3-topbar__leading {
+    display: inline-flex;
   }
 
-  .md3-topbar--search .md3-topbar__trailing .md3-topbar__search:focus {
-    outline: none !important;
+  header.md3-topbar--search .md3-topbar__trailing .md3-topbar__search:focus {
+    outline: none;
   }
 }
 
-@media screen and (max-width: 512px), screen and (max-height: 512px) {
-}
-
-/* images styling */
+/* images */
 header section.md3-topbar__leading img {
   height: 3.2rem;
   margin: 0 0.5rem 0 1rem;
@@ -24,7 +22,7 @@ header section.md3-topbar__trailing img {
   border-radius: 100%;
 }
 
-/* styling for titles and labels */
+/* titles and labels */
 header section.md3-topbar__trailing img ~ span {
   padding-left: 0 !important;
 }
@@ -35,7 +33,7 @@ header section.md3-topbar__trailing img ~ span {
   }
 }
 
-/* links styling */
+/* links */
 header section.md3-topbar__leading a {
   display: inline-flex;
   text-decoration: none;
@@ -48,7 +46,7 @@ header section.md3-topbar__leading a:hover {
   transform: scale(1.02);
 }
 
-/* styling for buttons with form */
+/* form inside a button */
 header form {
   margin-bottom: 0;
 }

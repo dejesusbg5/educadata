@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <title>grupo - educaData</title>
+    <title>estudiante - educaData</title>
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/profile.css" />
   </head>
 
   <body>
@@ -37,16 +38,46 @@
     </footer>
 
     <main>
-      <div id="container">
-        <h2>Grupo 1</h2>
-        <h5 style="text-align: end">Promedio: 65%</h5>
-        <section id="admin">
-          <div class="md3-card md3-card--filled"><span class="md3-card__headline">Gestionar lecciones</span></div>
-          <div class="md3-card md3-card--filled"><span class="md3-card__headline">Gestionar pruebas</span></div>
-          <div class="md3-card md3-card--filled"><span class="md3-card__headline">Ver informe de grupo</span></div>
-          <div class="md3-card md3-card--filled"><span class="md3-card__headline">Ver listado</span></div>
-        </section>
-      </div>
+      <h2>Estudiante</h2>
+      <section id="info">
+        <img src="./img/user.png" alt="Picture" />
+        <span id="info-name">Aaron Loeb</span>
+        <span id="info-email">Grupo 1</span>
+      </section>
+      <h5>Notas</h5>
+      <table class="ed-table">
+        <tr class="ed-table__bg">
+          <th>Tipo / Periodos</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+        </tr>
+        <tr>
+          <th>Tareas</th>
+          <td>34</td>
+          <td>63</td>
+          <td>36</td>
+        </tr>
+        <tr>
+          <th>Evaluaciones</th>
+          <td>63</td>
+          <td>23</td>
+          <td>67</td>
+        </tr>
+      </table>
+      <h5>Asistencia</h5>
+      <table class="ed-table">
+        <tr class="ed-table__bg">
+          <th>Ausencia</th>
+          <th>Fecha</th>
+        </tr>
+        <tr>
+          <th>falla #1</th>
+          <td>may. 12, 2024</td>
+        </tr>
+      </table>
+      <h5>Descripción de IA</h5>
+      <p>El alumno presenta un rendimiento por debajo del esperado en las tareas, exámenes y evaluaciones.</p>
     </main>
 
     <!-- Material Design -->

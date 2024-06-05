@@ -1,4 +1,4 @@
-/* general styles */
+/* general */
 #container,
 #container section,
 #container form {
@@ -40,7 +40,7 @@ body.dark #container {
   }
 }
 
-/* logo styling */
+/* logo */
 #container div {
   padding-bottom: 1rem;
 }
@@ -50,7 +50,7 @@ body.dark #container {
   align-self: baseline;
 }
 
-/* section styling */
+/* section */
 #container section {
   width: 45rem;
   justify-content: space-between;
@@ -76,7 +76,7 @@ body.dark #container {
   }
 }
 
-/* form styling */
+/* form */
 #container form {
   flex-direction: column;
 }
@@ -96,6 +96,7 @@ body.dark #container {
   }
 }
 
+/* links */
 #container a {
   margin: 1rem;
   font: var(--font-label-l);

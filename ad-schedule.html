@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <title>grupo - educaData</title>
+    <title>horario - educaData</title>
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/edit.css" />
   </head>
 
   <body>
@@ -38,14 +38,52 @@
 
     <main>
       <div id="container">
-        <h2>Grupo 1</h2>
-        <h5 style="text-align: end">Promedio: 65%</h5>
-        <section id="admin">
-          <div class="md3-card md3-card--filled"><span class="md3-card__headline">Gestionar lecciones</span></div>
-          <div class="md3-card md3-card--filled"><span class="md3-card__headline">Gestionar pruebas</span></div>
-          <div class="md3-card md3-card--filled"><span class="md3-card__headline">Ver informe de grupo</span></div>
-          <div class="md3-card md3-card--filled"><span class="md3-card__headline">Ver listado</span></div>
+        <h2>Editar horario</h2>
+        <h5>Año 2024</h5>
+        <section id="buttons">
+          <button class="md3-chip md3-chip--filter" type="button">
+            <span class="md3-chip__text">Lunes</span>
+          </button>
+          <button class="md3-chip md3-chip--filter" type="button">
+            <span class="md3-chip__text">Martes</span>
+          </button>
+          <button class="md3-chip md3-chip--filter" type="button">
+            <span class="md3-chip__text">Miércoles</span>
+          </button>
+          <button class="md3-chip md3-chip--filter" type="button">
+            <span class="md3-chip__text">Jueves</span>
+          </button>
+          <button class="md3-chip md3-chip--filter" type="button">
+            <span class="md3-chip__text">Viernes</span>
+          </button>
         </section>
+        <table class="ed-table">
+          <tr class="ed-table__bg">
+            <th>Inicio</th>
+            <th>Fin</th>
+            <th>Materia</th>
+          </tr>
+          <tr>
+            <td>6 AM</td>
+            <td>8 AM</td>
+            <td>Ciencias Naturales</td>
+          </tr>
+          <tr>
+            <td>8 AM</td>
+            <td>10 AM</td>
+            <td>Matematicas</td>
+          </tr>
+          <tr>
+            <td>10 AM</td>
+            <td>12 AM</td>
+            <td>Inglés</td>
+          </tr>
+          <tr>
+            <td>1 PM</td>
+            <td>3 PM</td>
+            <td>Lengua Castellana</td>
+          </tr>
+        </table>
       </div>
     </main>
 

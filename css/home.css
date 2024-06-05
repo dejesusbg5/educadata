@@ -1,3 +1,4 @@
+/* general */
 #container {
   display: flex;
   flex-direction: column;
@@ -20,6 +21,7 @@
   gap: 1rem;
 }
 
+/* admin section */
 #container section#admin .md3-card {
   flex: 100%;
 }
@@ -34,19 +36,17 @@
   font: var(--font-display-s);
 }
 
-#container section .md3-card--outlined {
-  border: 2px dashed var(--color-primary);
-}
-
+/* notifications section */
 #container section#notifications .md3-card div {
   margin-right: auto;
 }
 
-#container section .md3-card img {
+#container section#notifications .md3-card img {
   width: auto;
   height: 2rem;
 }
 
+/* list section */
 #container section#list .md3-card {
   flex: 100%;
   align-items: center;

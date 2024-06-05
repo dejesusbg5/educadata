@@ -1,3 +1,4 @@
+/* info section */
 section#info {
   display: flex;
   margin: 2rem 0;
@@ -19,13 +20,14 @@ section#info span#info-email {
   font: var(--font-title-s);
 }
 
+/* settings section */
 section#settings div.md3-card {
-    display: flex;
-    border: none;
-    cursor: pointer;
-    gap: 1rem;
+  display: flex;
+  border: none;
+  cursor: pointer;
+  gap: 1rem;
 }
 
-section#settings div.md3-card span.md3-card__headline{
-    margin-right: auto;
+section#settings div.md3-card span.md3-card__headline {
+  margin-right: auto;
 }

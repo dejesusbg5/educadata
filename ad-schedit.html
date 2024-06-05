@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <title>grupo - educaData</title>
+    <title>editar horario - educaData</title>
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/edit.css" />
   </head>
 
   <body>
@@ -38,13 +38,42 @@
 
     <main>
       <div id="container">
-        <h2>Grupo 1</h2>
-        <h5 style="text-align: end">Promedio: 65%</h5>
-        <section id="admin">
-          <div class="md3-card md3-card--filled"><span class="md3-card__headline">Gestionar lecciones</span></div>
-          <div class="md3-card md3-card--filled"><span class="md3-card__headline">Gestionar pruebas</span></div>
-          <div class="md3-card md3-card--filled"><span class="md3-card__headline">Ver informe de grupo</span></div>
-          <div class="md3-card md3-card--filled"><span class="md3-card__headline">Ver listado</span></div>
+        <h2>Editar horario</h2>
+        <h5>Año 2024</h5>
+        <section id="groups">
+          <div class="md3-card md3-card--outlined">
+            <span class="md3-card__headline">Ciencias Naturales</span>
+            <span class="md3-card__subhead">Lunes y Miércoles de 8:00 AM a 10:00 AM</span>
+            <button class="md3-btn md3-btn--icon">
+              <span class="material-symbols-rounded md3-btn__icon">edit</span>
+            </button>
+          </div>
+          <div class="md3-card md3-card--outlined">
+            <span class="md3-card__headline">Matemáticas</span>
+            <form id="schedule-form">
+              <div>
+                <label for="schedule-dia">Día:</label>
+                <select id="schedule-dia" name="dia" required="">
+                  <option value="Lunes">Lunes</option>
+                  <option value="Martes">Martes</option>
+                  <option value="Miércoles">Miércoles</option>
+                  <option value="Jueves">Jueves</option>
+                  <option value="Viernes">Viernes</option>
+                </select>
+              </div>
+              <div>
+                <label for="schedule-hora">Hora:</label>
+                <input id="schedule-hora" name="hora" type="time" class="md3-input--date" required="" />
+              </div>
+              <div>
+                <label for="schedule-amt">Duración:</label>
+                <input id="schedule-amt" name="duracion" type="number" class="md3-input--date" required="" />
+              </div>
+            </form>
+          </div>
+          <button class="md3-btn md3-btn--filled">
+            <span class="md3-btn__text">Añadir horario de clase</span>
+          </button>
         </section>
       </div>
     </main>
