@@ -24,9 +24,9 @@
       </section>
       <section class="md3-topbar__trailing">
         <input type="search" class="md3-topbar__search" placeholder="Buscar" />
-        <a href="#">
+        <a href="./settings.html">
           <button class="md3-btn md3-btn--icon md3-topbar__btn">
-            <img class="md3-btn__icon" src="./img/user.png" alt="Dani's picture" />
+            <img class="md3-btn__icon" src="./img/user.png" alt="User's picture" />
           </button>
         </a>
       </section>
@@ -41,10 +41,18 @@
         <h2>Grupo 1</h2>
         <h5 style="text-align: end">Promedio: 65%</h5>
         <section id="admin">
-          <div class="md3-card md3-card--filled"><span class="md3-card__headline">Gestionar lecciones</span></div>
-          <div class="md3-card md3-card--filled"><span class="md3-card__headline">Gestionar pruebas</span></div>
-          <div class="md3-card md3-card--filled"><span class="md3-card__headline">Ver informe de grupo</span></div>
-          <div class="md3-card md3-card--filled"><span class="md3-card__headline">Ver listado</span></div>
+          <div class="md3-card md3-card--filled" onclick="window.location = './tc-lecciones.html'">
+            <span class="md3-card__headline">Gestionar lecciones</span>
+          </div>
+          <div class="md3-card md3-card--filled" onclick="window.location = './tc-tareas.html'">
+            <span class="md3-card__headline">Gestionar pruebas</span>
+          </div>
+          <div class="md3-card md3-card--filled" onclick="window.location = './tc-informe.html'">
+            <span class="md3-card__headline">Ver informe de grupo</span>
+          </div>
+          <div class="md3-card md3-card--filled" onclick="window.location = './tc-list.html'">
+            <span class="md3-card__headline">Ver listado</span>
+          </div>
         </section>
       </div>
     </main>

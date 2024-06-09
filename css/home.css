@@ -41,6 +41,7 @@
   margin-right: auto;
 }
 
+#container section#list .md3-card img,
 #container section#notifications .md3-card img {
   width: auto;
   height: 2rem;

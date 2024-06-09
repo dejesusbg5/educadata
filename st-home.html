@@ -20,15 +20,25 @@
           <span class="md3-nav__item__text">Materias</span>
         </label>
       </a>
-      <input class="md3-nav__item-radio" type="radio" name="activity" id="to-2" />
-      <a class="md3-nav__item" href="#" tabindex="-1">
+      <input
+        class="md3-nav__item-radio"
+        type="radio"
+        name="activity"
+        id="to-2"
+        onclick="window.location = './st-tareas.html'" />
+      <a class="md3-nav__item" href="./st-tareas.html" tabindex="-1">
         <label class="md3-nav__item__label" for="to-2">
           <i class="material-symbols-rounded md3-nav__item__icon">checklist</i>
           <span class="md3-nav__item__text">Tareas</span>
         </label>
       </a>
-      <input class="md3-nav__item-radio" type="radio" name="activity" id="to-3" />
-      <a class="md3-nav__item" href="#" tabindex="-1">
+      <input
+        class="md3-nav__item-radio"
+        type="radio"
+        name="activity"
+        id="to-3"
+        onclick="window.location = './st-notas.html'" />
+      <a class="md3-nav__item" href="./st-notas.html" tabindex="-1">
         <label class="md3-nav__item__label" for="to-3">
           <i class="material-symbols-rounded md3-nav__item__icon">monitoring</i>
           <span class="md3-nav__item__text">Informes</span>
@@ -45,9 +55,9 @@
       </section>
       <section class="md3-topbar__trailing">
         <input type="search" class="md3-topbar__search" placeholder="Buscar" />
-        <a href="#">
+        <a href="./settings.html">
           <button class="md3-btn md3-btn--icon md3-topbar__btn">
-            <img class="md3-btn__icon" src="./img/user.png" alt="Dani's picture" />
+            <img class="md3-btn__icon" src="./img/user.png" alt="User's picture" />
           </button>
         </a>
       </section>
@@ -61,7 +71,9 @@
       <div id="container">
         <h2>Materias</h2>
         <section id="groups">
-          <div class="md3-card md3-card--filled"><span class="md3-card__headline">Grupo 1</span></div>
+          <div class="md3-card md3-card--filled" onclick="window.location = './st-lecciones.html'">
+            <span class="md3-card__headline">Grupo 1</span>
+          </div>
           <div class="md3-card md3-card--filled"><span class="md3-card__headline">Grupo 2</span></div>
           <div class="md3-card md3-card--filled"><span class="md3-card__headline">Grupo 3</span></div>
           <div class="md3-card md3-card--filled"><span class="md3-card__headline">Grupo 4</span></div>
