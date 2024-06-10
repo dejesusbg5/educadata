@@ -8,10 +8,11 @@
 #container {
   position: absolute;
   width: auto;
-  height: 16rem;
+  height: auto;
   padding: 2.5rem;
   color: var(--color-on-secondary-container);
   align-items: center;
+  justify-content: center;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
@@ -19,7 +20,6 @@
   background-color: var(--color-secondary-container);
   flex-direction: column;
   margin-top: -0.5rem;
-  justify-content: center;
 }
 
 body.dark #container {
@@ -85,6 +85,12 @@ body.dark #container {
   margin-left: auto;
 }
 
+#container form select {
+  height: 2.875rem;
+  margin: 0.25rem 0;
+  margin-top: -2.875rem;
+}
+
 @media screen and (max-width: 768px) {
   #container form {
     align-items: center;
@@ -93,6 +99,11 @@ body.dark #container {
 
   #container form input {
     width: calc(100% - 3rem);
+  }
+
+  #container form select {
+    width: calc(100% - 0.875rem);
+    margin-top: 1rem;
   }
 }
 
