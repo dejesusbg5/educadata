@@ -13,7 +13,7 @@
 
   <body>
     <nav class="md3-nav">
-      <a href="#">
+      <a href="./ad-create.html">
         <button class="md3-btn md3-nav__btn md3-btn--fab md3-btn--fab--tertiary">
           <span class="md3-btn--fab__icon material-symbols-rounded"> add </span>
         </button>
@@ -78,15 +78,15 @@
         <section id="admin">
           <div class="md3-card md3-card--outlined">
             <span class="md3-card__headline">Docentes</span>
-            <span class="md3-card__text">720</span>
+            <span id="countDocentes" class="md3-card__text"></span>
           </div>
           <div class="md3-card md3-card--outlined">
             <span class="md3-card__headline">Administrativos</span>
-            <span class="md3-card__text">240</span>
+            <span id="countAdmins" class="md3-card__text"></span>
           </div>
           <div class="md3-card md3-card--outlined">
             <span class="md3-card__headline">Estudiantes</span>
-            <span class="md3-card__text">12.963</span>
+            <span id="countEstudiantes" class="md3-card__text"></span>
           </div>
         </section>
       </div>
@@ -100,5 +100,6 @@
     <!-- educaData -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/ad-home.js"></script>
   </body>
 </html>

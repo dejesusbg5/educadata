@@ -39,13 +39,13 @@
             </a>
           </div>
           <form action="./st-home.html" method="post" id="login-form">
-            <select title="rol" name="rol">
-              <option value="0">Estudiante</option>
-              <option value="1">Docente</option>
-              <option value="2">Administrador</option>
+            <select title="tipo" name="tipo">
+              <option value="1">Estudiante</option>
+              <option value="2">Docente</option>
+              <option value="3">Administrador</option>
             </select>
-            <input class="md3-input--text" type="email" name="email" placeholder="ejemplo@colegio.edu.co" required />
-            <input class="md3-input--text" type="password" name="password" placeholder="contraseña" required />
+            <input class="md3-input--text" type="email" name="correo" placeholder="ejemplo@colegio.edu.co" required />
+            <input class="md3-input--text" type="password" name="clave" placeholder="contraseña" required />
             <button class="md3-btn md3-btn--filled" type="submit">
               <span class="md3-btn__text">Ingresar</span>
             </button>
@@ -62,5 +62,6 @@
     <!-- educaData -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/login.js"></script>
   </body>
 </html>

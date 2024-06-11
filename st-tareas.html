@@ -1,129 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <title>tareas - educaData</title>
-    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/notas.css" />
-  </head>
 
-  <body>
-    <nav class="md3-nav">
-      <input
-        class="md3-nav__item-radio"
-        type="radio"
-        name="activity"
-        id="to-1"
-        onclick="window.location = './st-home.html'" />
-      <a class="md3-nav__item" href="./st-home.html" tabindex="-1">
-        <label class="md3-nav__item__label" for="to-1">
-          <i class="material-symbols-rounded md3-nav__item__icon">home</i>
-          <span class="md3-nav__item__text">Materias</span>
-        </label>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <title>tareas - educaData</title>
+  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/notas.css" />
+</head>
+
+<body>
+  <nav class="md3-nav">
+    <input class="md3-nav__item-radio" type="radio" name="activity" id="to-1"
+      onclick="window.location = './st-home.html'" />
+    <a class="md3-nav__item" href="./st-home.html" tabindex="-1">
+      <label class="md3-nav__item__label" for="to-1">
+        <i class="material-symbols-rounded md3-nav__item__icon">home</i>
+        <span class="md3-nav__item__text">Materias</span>
+      </label>
+    </a>
+    <input class="md3-nav__item-radio" type="radio" name="activity" id="to-2" checked />
+    <a class="md3-nav__item" href="#" tabindex="-1">
+      <label class="md3-nav__item__label" for="to-2">
+        <i class="material-symbols-rounded md3-nav__item__icon">checklist</i>
+        <span class="md3-nav__item__text">Tareas</span>
+      </label>
+    </a>
+    <input class="md3-nav__item-radio" type="radio" name="activity" id="to-3"
+      onclick="window.location = './st-notas.html'" />
+    <a class="md3-nav__item" href="./st-notas.html" tabindex="-1">
+      <label class="md3-nav__item__label" for="to-3">
+        <i class="material-symbols-rounded md3-nav__item__icon">monitoring</i>
+        <span class="md3-nav__item__text">Informes</span>
+      </label>
+    </a>
+  </nav>
+
+  <header class="md3-topbar md3-topbar--search">
+    <section class="md3-topbar__leading">
+      <a href="#">
+        <img src="./img/logo.png" alt="Logo educaData" />
+        <span class="md3-topbar__title">educaData</span>
       </a>
-      <input class="md3-nav__item-radio" type="radio" name="activity" id="to-2" checked />
-      <a class="md3-nav__item" href="#" tabindex="-1">
-        <label class="md3-nav__item__label" for="to-2">
-          <i class="material-symbols-rounded md3-nav__item__icon">checklist</i>
-          <span class="md3-nav__item__text">Tareas</span>
-        </label>
+    </section>
+    <section class="md3-topbar__trailing">
+      <input type="search" class="md3-topbar__search" placeholder="Buscar" />
+      <a href="./settings.html">
+        <button class="md3-btn md3-btn--icon md3-topbar__btn">
+          <img class="md3-btn__icon" src="./img/user.png" alt="User's picture" />
+        </button>
       </a>
-      <input
-        class="md3-nav__item-radio"
-        type="radio"
-        name="activity"
-        id="to-3"
-        onclick="window.location = './st-notas.html'" />
-      <a class="md3-nav__item" href="./st-notas.html" tabindex="-1">
-        <label class="md3-nav__item__label" for="to-3">
-          <i class="material-symbols-rounded md3-nav__item__icon">monitoring</i>
-          <span class="md3-nav__item__text">Informes</span>
-        </label>
-      </a>
-    </nav>
+    </section>
+  </header>
 
-    <header class="md3-topbar md3-topbar--search">
-      <section class="md3-topbar__leading">
-        <a href="#">
-          <img src="./img/logo.png" alt="Logo educaData" />
-          <span class="md3-topbar__title">educaData</span>
-        </a>
-      </section>
-      <section class="md3-topbar__trailing">
-        <input type="search" class="md3-topbar__search" placeholder="Buscar" />
-        <a href="./settings.html">
-          <button class="md3-btn md3-btn--icon md3-topbar__btn">
-            <img class="md3-btn__icon" src="./img/user.png" alt="User's picture" />
-          </button>
-        </a>
-      </section>
-    </header>
+  <footer>
+    <span>© 2024 - Grupo 3 (ARQ SW) </span>
+  </footer>
 
-    <footer>
-      <span>© 2024 - Grupo 3 (ARQ SW) </span>
-    </footer>
+  <main>
+    <div id="container">
+      <h2>Actividades</h2>
+      <table class="ed-table">
+        <tr class="ed-table__bg">
+          <th>Semana</th>
+          <th>Pendientes</th>
+        </tr>
+        <tr>
+          <td>may. 27 - jun. 2</td>
+          <td>1 tarea vencida</td>
+        </tr>
+        <tr>
+          <td>jun. 3 - jun. 9</td>
+          <td>2 exámenes, 3 tareas</td>
+        </tr>
+        <tr>
+          <td>jun. 10 - jun. 16</td>
+          <td>1 examen, 0 tareas</td>
+        </tr>
+      </table>
+      <!-- <h5>Evaluaciones</h5>
+      <section class="tasks">
+        <div class="md3-card md3-card--outlined">
+          <span class="md3-card__headline">Evaluación suave</span>
+          <span class="md3-card__subhead">Matemáticas</span>
+          <span class="md3-card__text">Vence el jun. 5, 2024 a las 11:59 PM</span>
+        </div>
+      </section> -->
+      <h5>Tareas</h5>
+      <section id="tasks" class="tasks"> </section>
+    </div>
+  </main>
 
-    <main>
-      <div id="container">
-        <h2>Actividades</h2>
-        <table class="ed-table">
-          <tr class="ed-table__bg">
-            <th>Semana</th>
-            <th>Pendientes</th>
-          </tr>
-          <tr>
-            <td>may. 27 - jun. 2</td>
-            <td>1 tarea vencida</td>
-          </tr>
-          <tr>
-            <td>jun. 3 - jun. 9</td>
-            <td>2 exámenes, 3 tareas</td>
-          </tr>
-          <tr>
-            <td>jun. 10 - jun. 16</td>
-            <td>1 examen, 0 tareas</td>
-          </tr>
-        </table>
-        <h5>Evaluaciones</h5>
-        <section class="tasks">
-          <div class="md3-card md3-card--outlined">
-            <span class="md3-card__headline">Evaluación suave</span>
-            <span class="md3-card__subhead">Matemáticas</span>
-            <span class="md3-card__text">Vence el jun. 5, 2024 a las 11:59 PM</span>
-          </div>
-        </section>
-        <h5>Tareas</h5>
-        <section class="tasks">
-          <div class="md3-card md3-card--outlined">
-            <span class="md3-card__headline">Tarea 1</span>
-            <span class="md3-card__subhead">Ciencias Naturales</span>
-            <span class="md3-card__text">Vence el jun. 8, 2024 a las 11:59 PM</span>
-          </div>
-          <div class="md3-card md3-card--outlined">
-            <span class="md3-card__headline">Tarea 2</span>
-            <span class="md3-card__subhead">Historia</span>
-            <span class="md3-card__text">Vence el jun. 12, 2024 a las 11:59 PM</span>
-            <span class="md3-card__text"
-              >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, veritatis sunt repudiandae
-              voluptates incidunt doloribus accusantium eveniet? Saepe, laudantium aperiam sit, corporis labore
-              laboriosam beatae voluptatibus non, autem ex tenetur.</span
-            >
-          </div>
-        </section>
-      </div>
-    </main>
+  <!-- Material Design -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vibrant.js/1.0.0/Vibrant.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/dejesusbg5/md3/script/monet.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/dejesusbg5/md3/script/material-you.js"></script>
+  <!-- educaData -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/st-tareas.js"></script>
+</body>
 
-    <!-- Material Design -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vibrant.js/1.0.0/Vibrant.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/dejesusbg5/md3/script/monet.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/dejesusbg5/md3/script/material-you.js"></script>
-    <!-- educaData -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./js/app.js"></script>
-  </body>
 </html>

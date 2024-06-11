@@ -1,128 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <title>crear usuario - educaData</title>
-    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/edit.css" />
-  </head>
 
-  <body>
-    <header class="md3-topbar md3-topbar--search">
-      <section class="md3-topbar__leading">
-        <button class="md3-btn md3-btn--icon md3-topbar__btn" onclick="history.back()">
-          <span class="material-symbols-rounded md3-btn__icon"> arrow_back </span>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <title>crear usuario - educaData</title>
+  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/edit.css" />
+</head>
+
+<body>
+  <header class="md3-topbar md3-topbar--search">
+    <section class="md3-topbar__leading">
+      <button class="md3-btn md3-btn--icon md3-topbar__btn" onclick="history.back()">
+        <span class="material-symbols-rounded md3-btn__icon"> arrow_back </span>
+      </button>
+      <a href="#">
+        <img src="./img/logo.png" alt="Logo educaData" />
+        <span class="md3-topbar__title">educaData</span>
+      </a>
+    </section>
+    <section class="md3-topbar__trailing">
+      <input type="search" class="md3-topbar__search" placeholder="Buscar" />
+      <a href="./settings.html">
+        <button class="md3-btn md3-btn--icon md3-topbar__btn">
+          <img class="md3-btn__icon" src="./img/user.png" alt="User's picture" />
         </button>
-        <a href="#">
-          <img src="./img/logo.png" alt="Logo educaData" />
-          <span class="md3-topbar__title">educaData</span>
-        </a>
-      </section>
-      <section class="md3-topbar__trailing">
-        <input type="search" class="md3-topbar__search" placeholder="Buscar" />
-        <a href="./settings.html">
-          <button class="md3-btn md3-btn--icon md3-topbar__btn">
-            <img class="md3-btn__icon" src="./img/user.png" alt="User's picture" />
+      </a>
+    </section>
+  </header>
+
+  <footer>
+    <span>© 2024 - Grupo 3 (ARQ SW) </span>
+  </footer>
+
+  <main>
+    <div id="container">
+      <h2>Crear usuario</h2>
+      <form id="edit-form">
+        <div>
+          <label for="student-rol">Rol:</label>
+          <select id="student-rol" name="rol" required="">
+            <option value="1">Estudiante</option>
+            <option value="2">Docente</option>
+            <option value="3">Admin</option>
+          </select>
+        </div>
+        <div>
+          <label for="nombres">Nombres:</label>
+          <input id="nombres" name="nombres" type="text" placeholder="Juan Pérez" class="md3-input--text" required="" />
+        </div>
+        <div>
+          <label for="apellidos">Apellidos:</label>
+          <input id="apellidos" name="apellidos" type="text" placeholder="Juan Pérez" class="md3-input--text"
+            required="" />
+        </div>
+        <div>
+          <label for="estado">Estado:</label>
+          <input id="estado" name="estado" type="text" placeholder="Juan Pérez" class="md3-input--text" required="" />
+        </div>
+        <div>
+          <label for="idGrado">Grado:</label>
+          <select id="idGrado" name="idGrado" required="">
+            <option value="1">Sexto</option>
+            <option value="2">Séptimo</option>
+            <option value="3">Octavo</option>
+            <option value="4">Noveno</option>
+            <option value="5">Décimo</option>
+            <option value="6">Undécimo</option>
+          </select>
+        </div>
+        <div>
+          <label for="correo">Correo:</label>
+          <input id="correo" name="correo" type="email" placeholder="ejemplo@colegio.edu.co" class="md3-input--text"
+            required="" />
+        </div>
+        <div>
+          <label for="clave">Clave:</label>
+          <input id="clave" name="clave" type="password" placeholder="ejemplo@colegio.edu.co" class="md3-input--text"
+            required="" />
+        </div>
+        <div>
+          <button class="md3-btn md3-btn--filled ripple" type="submit">
+            <span class="md3-btn__text"> Aceptar </span>
           </button>
-        </a>
-      </section>
-    </header>
+        </div>
+      </form>
+    </div>
+  </main>
 
-    <footer>
-      <span>© 2024 - Grupo 3 (ARQ SW) </span>
-    </footer>
+  <!-- Material Design -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vibrant.js/1.0.0/Vibrant.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/dejesusbg5/md3/script/monet.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/dejesusbg5/md3/script/material-you.js"></script>
+  <!-- educaData -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/ad-create.js"></script>
+</body>
 
-    <main>
-      <div id="container">
-        <h2>Crear usuario</h2>
-        <form id="edit-form">
-          <div>
-            <label for="student-rol">Rol:</label>
-            <select id="student-rol" name="rol" required="">
-              <option value="1">Estudiante</option>
-              <option value="2">Docente</option>
-              <option value="3">Admin</option>
-            </select>
-          </div>
-          <div>
-            <label for="student-nombre">Nombre completo:</label>
-            <input
-              id="student-nombre"
-              name="nombre"
-              type="text"
-              placeholder="Juan Pérez"
-              class="md3-input--text"
-              required="" />
-          </div>
-          <div>
-            <label for="student-nacimiento">Fecha de Nacimiento:</label>
-            <input
-              id="student-nacimiento"
-              name="nacimiento"
-              type="date"
-              placeholder=""
-              class="md3-input--date"
-              required="" />
-          </div>
-          <div>
-            <label for="student-grado">Grado:</label>
-            <select id="student-grado" name="grado" required="">
-              <option value="1">Sexto</option>
-              <option value="2">Séptimo</option>
-              <option value="3">Octavo</option>
-              <option value="4">Noveno</option>
-              <option value="5">Décimo</option>
-              <option value="6">Undécimo</option>
-            </select>
-          </div>
-          <div>
-            <label for="student-curso">Curso:</label>
-            <select id="student-curso" name="curso" required="">
-              <option value="1">A</option>
-              <option value="2">B</option>
-              <option value="3">C</option>
-            </select>
-          </div>
-          <div>
-            <label for="student-telefono">Teléfono:</label>
-            <input
-              id="student-telefono"
-              name="telefono"
-              type="text"
-              placeholder="+57 305 503 3053"
-              class="md3-input--text"
-              required="" />
-          </div>
-          <div>
-            <label for="student-correo">Correo:</label>
-            <input
-              id="student-correo"
-              name="correo"
-              type="email"
-              placeholder="ejemplo@colegio.edu.co"
-              class="md3-input--text"
-              required="" />
-          </div>
-          <div>
-            <button class="md3-btn md3-btn--filled ripple" type="submit">
-              <span class="md3-btn__text"> Aceptar </span>
-            </button>
-          </div>
-        </form>
-      </div>
-    </main>
-
-    <!-- Material Design -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vibrant.js/1.0.0/Vibrant.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/dejesusbg5/md3/script/monet.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/dejesusbg5/md3/script/material-you.js"></script>
-    <!-- educaData -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./js/app.js"></script>
-  </body>
 </html>

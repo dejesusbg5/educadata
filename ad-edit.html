@@ -41,65 +41,64 @@
         <h2>Editar usuario</h2>
 
         <form id="edit-form">
+          
           <div>
-            <label for="student-foto">Foto:</label>
-            <input id="student-foto" name="foto" type="file" placeholder="Foto de Perfil" class="md3-input--file" />
-          </div>
-          <div>
-            <label for="student-nombre">Nombre completo:</label>
+            <label for="nombres">Nombres:</label>
             <input
-              id="student-nombre"
-              name="nombre"
+              id="nombres"
+              name="nombres"
               type="text"
               placeholder="Juan Pérez"
               class="md3-input--text"
               required="" />
           </div>
           <div>
-            <label for="student-nacimiento">Fecha de Nacimiento:</label>
+            <label for="apellidos">Apellidos:</label>
             <input
-              id="student-nacimiento"
-              name="nacimiento"
-              type="date"
-              placeholder=""
-              class="md3-input--date"
+              id="apellidos"
+              name="apellidos"
+              type="text"
+              placeholder="Juan Pérez"
+              class="md3-input--text"
               required="" />
           </div>
           <div>
-            <label for="student-grado">Grado:</label>
-            <select id="student-grado" name="grado" required="">
+            <label for="estado">Estado:</label>
+            <input
+              id="estado"
+              name="estado"
+              type="text"
+              placeholder="Juan Pérez"
+              class="md3-input--text"
+              required="" />
+          </div>
+          <div>
+            <label for="idGrado">Grado:</label>
+            <select id="idGrado" name="idGrado" required="">
               <option value="1">Sexto</option>
               <option value="2">Séptimo</option>
               <option value="3">Octavo</option>
               <option value="4">Noveno</option>
               <option value="5">Décimo</option>
               <option value="6">Undécimo</option>
-            </select>
+            </select>   
           </div>
           <div>
-            <label for="student-curso">Curso:</label>
-            <select id="student-curso" name="curso" required="">
-              <option value="1">A</option>
-              <option value="2">B</option>
-              <option value="3">C</option>
-            </select>
-          </div>
-          <div>
-            <label for="student-telefono">Teléfono:</label>
+            <label for="correo">Correo:</label>
             <input
-              id="student-telefono"
-              name="telefono"
-              type="text"
-              placeholder="+57 305 503 3053"
+              id="correo"
+              name="correo"
+              type="email"
+              placeholder="ejemplo@colegio.edu.co"
               class="md3-input--text"
               required="" />
           </div>
           <div>
-            <label for="student-correo">Correo:</label>
+            <label for="clave">Clave:</label>
             <input
-              id="student-correo"
-              name="correo"
-              type="email"
+              id="clave"
+              name="clave"
+              type="password"
               placeholder="ejemplo@colegio.edu.co"
               class="md3-input--text"
               required="" />
@@ -121,5 +120,6 @@
     <!-- educaData -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/ad-edit.js"></script>
   </body>
 </html>

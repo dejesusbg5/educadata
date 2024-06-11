@@ -29,3 +29,10 @@ if (filename.includes("ad-")) {
 } else {
   colorScheme("#ffb552", "#ee3c89");
 }
+
+$.fn.extend({
+  serializeObj: function () {
+    return this.serializeArray().reduce((acc, { name, value }) => ({ ...acc, [name]: value }), {});
+  },
+});
+
